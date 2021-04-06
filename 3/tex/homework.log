@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.10)  3 APR 2021 09:01
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.10)  5 APR 2021 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/circle/OneDrive/Statistical-Mechanics-and-Its-Application/1/tex/homework
-(/Users/circle/OneDrive/Statistical-Mechanics-and-Its-Application/1/tex/homework.tex
+**/Users/circle/OneDrive/Statistical-Mechanics-and-Its-Application/3/tex/homework
+(/Users/circle/OneDrive/Statistical-Mechanics-and-Its-Application/3/tex/homework.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -22,7 +22,7 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) (../../setting.tex (/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+) (/Users/circle/Documents/博一下/homework/setting.tex (/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
 \bibsep=\skip50
@@ -1136,8 +1136,7 @@ Package: autobreak 2017/02/23 v0.3 simple line breaking of long formulae
 Package: xeCJK-listings 2020/02/18 v3.8.2 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count400
 \l__xeCJK_listings_flag_int=\count401
-)
-No file homework.aux.
+) (./homework.aux)
 \openout1 = `homework.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -1160,6 +1159,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
+
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 31.
 
@@ -1271,16 +1271,13 @@ Package hyperref Info: Link coloring ON on input line 31.
 LaTeX Info: Redefining \ref on input line 31.
 LaTeX Info: Redefining \pageref on input line 31.
 LaTeX Info: Redefining \nameref on input line 31.
+ (./homework.out) (./homework.out)
 \@outlinefile=\write7
 \openout7 = `homework.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \c@lstlisting=\count402
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 31.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 31.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1304,91 +1301,38 @@ File: uesint.fd
 LaTeX Font Info:    Trying to load font information for OT1+bch on input line 36.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
-)
-
-LaTeX Warning: Reference `fig:1' on page 1 undefined on input line 39.
-
-
-Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
-(fontspec)                Script "CJK".
-
-
-Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
-(fontspec)             'FandolFang-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-File: ../posi1.eps Graphic file (type eps)
-<../posi1.eps>
-
-LaTeX Warning: Reference `fig:2' on page 1 undefined on input line 51.
-
-
-Package natbib Warning: Citation `10.5555/42249' on page 1 undefined on input line 51.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [1
+) (./bib.tex [1
 
 ]
-File: ../posi2.eps Graphic file (type eps)
- <../posi2.eps>
-
-LaTeX Warning: Reference `fig:3' on page 1 undefined on input line 69.
-
-File: ../posi3.eps Graphic file (type eps)
-<../posi3.eps>
-
-LaTeX Warning: Reference `fig:4' on page 1 undefined on input line 78.
-
-File: ../posi4.eps Graphic file (type eps)
-<../posi4.eps> (./bib.tex [2] [3]
 No file homework.bbl.
 )
 
-Package natbib Warning: There were undefined citations.
+Package caption Warning: Unused \captionsetup[figure] on input line 2.
+See the caption package documentation for explanation.
 
 
 Package caption Warning: Unused \captionsetup[table] on input line 3.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 (./homework.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 94.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 65.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package rerunfilecheck Info: File `homework.out' has not changed.
+(rerunfilecheck)             Checksum: 7513EBF3303FFCEE9768B7BB03651926;48.
 
-
-Package rerunfilecheck Warning: File `homework.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `homework.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  146021531C75F142F181487F0CDB4B1C;96.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 38392 strings out of 479418
- 764921 string characters out of 5884585
- 1334820 words of memory out of 5000000
- 55151 multiletter control sequences out of 15000+600000
- 543940 words of font info for 111 fonts, out of 8000000 for 9000
+ 37788 strings out of 479418
+ 758580 string characters out of 5884585
+ 1329913 words of memory out of 5000000
+ 54554 multiletter control sequences out of 15000+600000
+ 543908 words of font info for 107 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 63i,5n,83p,1264b,1596s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,5n,83p,1264b,729s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework.pdf (3 pages).
+Output written on homework.pdf (1 page).

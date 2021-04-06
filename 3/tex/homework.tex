@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\input{/Users/circle/Documents/博一下/homework/setting.tex}
+\setcounter{secnumdepth}{2}
+\usepackage{bm}
+\usepackage{autobreak}
+\usepackage{amsmath}
+\setlength{\parindent}{2em}
+\graphicspath{{../}}
+
+%pdf文件设置
+\hypersetup{
+	pdfauthor={袁磊祺},
+	pdftitle={统计力学及应用作业3}
+}
+
+\title{
+		\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{\LARGE Peking University}\\[1cm] % Name of your university/college \\ [25pt]
+		\horrule{0.5pt} \\[0.5cm]
+		\huge \bfseries{统计力学及应用作业3} \\
+		\horrule{2pt} \\[0.5cm]
+}
+\author{
+		\normalfont 								\normalsize
+		College of Engineering \quad 2001111690  \quad 袁磊祺\\	\normalsize
+        \today
+}
+\date{}
+
+\begin{document}
+
+\input{setc.tex}
+
+\maketitle
+
+\section{1}
+
+证明Metropolis方法产生的随机数列分布为$\rho(x)$，若$\frac{A_{xx'}}{A_{x'x}}=\frac{\rho (x')}{\rho (x)}$.
+
+经过长时间的发展后，处于某一状态$x$的概率都为一常数。考虑$x,\ x'$两点间转化的概率，不妨设$\rho(x)>\rho(x')$。
+\begin{equation}
+	T(x\to x') = \omega_{xx'} A_{xx'} = \omega_{xx'} \frac{\rho (x')}{\rho (x)},
+\end{equation}
+\begin{equation}
+	T(x'\to x) = \omega_{x'x} A_{x'x} = \omega_{x'x}.
+\end{equation}
+由于
+\begin{equation}
+	T(x\to x')\rho (x) = \omega_{xx'} \frac{\rho (x')}{\rho (x)} \rho (x) = \omega_{xx'}\rho (x') = \omega_{x'x}\rho (x') = T(x'\to x)\rho (x'),
+\end{equation}
+所以其达到了细致平衡，也就是说系统达到的平衡是$x$数列分布满足$\rho(x)$概率密度的平衡。\qed
+
+
+
+
+
+
+
+
+% \nocite{*}
+
+\input{bib.tex}
+
+\end{document}
