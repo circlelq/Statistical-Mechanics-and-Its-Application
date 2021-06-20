@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+\input{/Users/circle/Documents/博一下/homework/setting.tex}
+\setcounter{secnumdepth}{2}
+\usepackage{bm}
+\usepackage{autobreak}
+\usepackage{amsmath}
+\setlength{\parindent}{2em}
+\graphicspath{{../}}
+
+%pdf文件设置
+\hypersetup{
+	pdfauthor={袁磊祺},
+	pdftitle={统计力学及应用作业5}
+}
+
+\title{
+		\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{\LARGE Peking University}\\[1cm] % Name of your university/college \\ [25pt]
+		\horrule{0.5pt} \\[0.5cm]
+		\huge \bfseries{统计力学及应用作业5} \\
+		\horrule{2pt} \\[0.5cm]
+}
+\author{
+		\normalfont 								\normalsize
+		College of Engineering \quad 2001111690  \quad 袁磊祺\\	\normalsize
+        \today
+}
+\date{}
+
+\begin{document}
+
+\input{setc.tex}
+
+\maketitle
+
+\section{1}
+
+
+以$u(q)=\sum \limits_{\substack{i,j\\i\not= j}}\frac{1}{2}k\left(q_i-q_j\right)^2$为例，用相似性方法给出一个$F$的表达式。
+
+根据相似性方法给出的一般表达式
+\begin{equation}
+	F = -3NT\left(\frac{1}{2}+\frac{1}{n}\right)\ln T - TN \ln f\left(\frac{V}{N}T^{-\frac{3}{n}}\right).
+\end{equation}
+
+对于
+\begin{equation}
+	u(q)=\sum {\substack{i,j\\i\not= j}}\frac{1}{2}k\left(q_i-q_j\right)^2,
+\end{equation}
+可知$n=2$,所以
+\begin{equation}
+	F = -3NT\ln T - TN \ln f\left(\frac{V}{N}T^{-\frac{3}{2}}\right).
+\end{equation}
+
+
+
+\section{2}
+
+以麦克斯韦分布推导理想气体自由能$F$，得到物态方程。
+
+由于
+\begin{equation}
+	F=-N T \ln \left(\frac{\mathrm{e}}{N} \sum_{k} \mathrm{e}^{-\frac{\varepsilon_{k}}{T}}\right),
+	\label{eq:21}
+\end{equation}
+利用这个公式,就能够把相同粒子所组成的而且遵循玻尔兹曼统计的任何气体 的自由能计算出来.
+
+气体分子的平动是准经典的，并且分子的能量可以写成形式
+\begin{equation}
+	\varepsilon_{k}\left(p_{x}, p_{y}, p_{z}\right)=\frac{p_{x}^{2}+p_{y}^{2}+p_{z}^{2}}{2 m}+\varepsilon_{k}^{\prime}
+\end{equation}
+式中第一项是分子的平动动能,而 $\varepsilon_{k}^{\prime}$ 代表与分子的转动和它的内部状态相对应 的能级 $; \varepsilon_{k}^{\prime}$ 既与速度无关,也与分子质心的坐标无关 $($ 假定没有任何外场) $.$ 公式 \cref{eq:21}中对数号下的配分函数,现在应该用下式来代替:
+\begin{equation}
+	\sum_{k} \iint \exp \left(-\frac{\varepsilon_{k}(\boldsymbol{p})}{T}\right) \frac{\mathrm{d}^{3} p}{(2 \pi \hbar)^{3}} \mathrm{~d} V=V\left(\frac{m T}{2 \pi \hbar^{2}}\right)^{3 / 2} \sum_{k} \mathrm{e}^{-\varepsilon_{k} / T}.
+\end{equation}
+
+
+
+(对 $\mathrm{d} V=\mathrm{d} x \mathrm{~d} y \mathrm{~d} z$ 的积分是遍及气体的整个体积 $V$ 来进行的 ). 于是我们得到自由能为：
+\begin{equation}
+	F=-N T \ln \left[\frac{\mathrm{e} V}{N}\left(\frac{m T}{2 \pi \hbar^{2}}\right)^{3 / 2} \sum_{k} \mathrm{e}^{-\varepsilon{'}_{k}/ T}\right].
+\end{equation}
+
+当然,如果对分子的性质不作任何假定,出现在上式中的和式是不可能以 普遍形式计算出来的. 但是值得注意的是 :它只是温度的函数.
+\begin{equation}
+	F=-N T \ln \frac{\mathrm{e} V}{N}+N f(T),
+\end{equation}
+式中 $f(T)$ 是温度的某个函数. 由此可得气体的压强为
+\begin{equation}
+	P=-\frac{\partial F}{\partial V}=\frac{N T}{V},
+\end{equation}
+或
+\begin{equation}
+	P V=N T.
+\end{equation}
+
+
+
+
+
+
+% \nocite{*}
+
+\input{bib.tex}
+
+\end{document}

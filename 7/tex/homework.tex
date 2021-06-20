@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+\input{/Users/circle/Documents/博一下/homework/setting.tex}
+\setcounter{secnumdepth}{2}
+\usepackage{autobreak}
+\usepackage{amsmath}
+\setlength{\parindent}{2em}
+\graphicspath{{../}}
+\ziju{0.1pt}
+
+%pdf文件设置
+\hypersetup{
+	pdfauthor={袁磊祺},
+	pdftitle={统计力学及应用作业7}
+}
+
+\title{
+		\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{\LARGE Peking University}\\[0.2cm] % Name of your university/college \\ [25pt]
+		\horrule{0.5pt} \\[0.2cm]
+		\huge \bfseries{统计力学及应用作业7} \\[-0.2cm]
+		\horrule{2pt} \\[0.2cm]
+}
+\author{
+		\normalfont 								\normalsize
+		College of Engineering \quad 2001111690  \quad 袁磊祺\\	\normalsize
+        \today
+}
+\date{}
+
+\begin{document}
+
+\input{/Users/circle/Documents/博一下/homework/setc.tex}
+
+\maketitle
+
+\section{1}
+
+在一个装有理想气体的容器上开一小孔，由麦克斯韦分布求出
+\begin{enumerate}
+	\item 单位时间小孔中跑出的气体分子数。
+	\item 跑出的气体分子的平均能量。
+	\item 求$\gamma_{12},\ \gamma_{22}$.
+\end{enumerate}
+
+\subsection{1}
+
+假设面元$\dif A$在$x,y$平面内，单位时间$\dif t$矢量为$\bm{v}\sim \bm{v}+\dif \bm{v}$的碰壁分子数为
+\begin{equation}
+	\dif N'(v_x,v_y,v_z) = nf(v_x)f(v_y)f(v_z)\dif v_x \dif v_y \dif v_z \cdot v_x \dif t \dif A.
+\end{equation}
+对$v_y,v_z$积分得
+\begin{equation}
+	\dif N'(v_x) = nf(v_x)\dif v_x \cdot v_x \dif t \dif A.
+\end{equation}
+因为只有$v_x>0$的部分才能碰壁，所以
+\begin{equation}
+	\begin{aligned}
+		N^{\prime} & =n \int_{0}^{\infty} f\left(v_{x}\right) v_{x} \dif v_{x} \cdot \dif A \dif t                                                                                \\
+		           & =n \int_{0}^{\infty}\left(\frac{m}{2 \pi k T}\right)^{1 / 2} \cdot \exp \left(-\frac{m v_{x}^{2}}{2 k T}\right) \cdot v_{x} \dif v_{{x}} \cdot \dif A \dif t \\
+		           & =n \sqrt{\frac{k T}{2 \pi m}} \dif A \dif t=\frac{1}{4} n \bar{v} \dif A \dif t.
+	\end{aligned}
+\end{equation}
+其中$\bar{v}=\sqrt{\frac{8k T}{ \pi m}}$为麦克斯韦分布的平均速率。单位时间内捧在单位面积上的总分子数为
+\begin{equation}
+	\Gamma = \frac{N'}{\dif A \dif t} = \frac{1}{4}n\bar{v}.
+\end{equation}
+对于理想气体，利用$p=nkT$，则有
+\begin{equation}
+	\Gamma = \frac{n}{4} \sqrt{\frac{8k T}{ \pi m}}=\frac{p}{\sqrt{2\pi mkT}}.
+\end{equation}
+即为单位时间从单位面积小孔中跑出的气体分子数。
+
+\subsection{2}
+
+分子束的速率分布函数正比于$f(v)v$,故
+\begin{equation}
+	F(v)\dif v = Af(v)v\dif v,
+\end{equation}
+由归一化条件得$A=\frac{1}{\bar{v}}$.分子束的方均根速率为
+\begin{equation}
+	{\bar{\left(v^2_{\text{束}}\right)}}=\int^{\infty}_0F(v)v^2\dif v={\frac{4kT}{m}}.
+\end{equation}
+跑出的气体分子的平均能量为
+\begin{equation}
+	e = \frac{1}{2} m \bar{\left(v^2_{\text{束}}\right)}/k = 2T.
+\end{equation}
+
+
+\subsection{3}
+
+设小孔面积为$\sigma$,单位时间小孔交换的粒子数为
+\begin{equation}
+	\Delta N = \frac{1}{4}(n_1-n_2)\bar{v}\sigma\Delta t= \frac{1}{4}\frac{\Delta p}{kT}\bar{v}\sigma\Delta t.
+\end{equation}
+\begin{equation}
+	\Delta E = \Delta N k\cdot 2T = 2T\frac{1}{4}\frac{\Delta p}{T}\bar{v}\sigma \Delta t.
+\end{equation}
+又根据
+\begin{equation}
+	\frac{\Delta E}{\Delta t} = \gamma_{12} \frac{1}{T} \frac{T}{p} \Delta p,
+\end{equation}
+所以
+\begin{equation}
+	\gamma_{12} = \frac{p\bar{v}\sigma}{2}.
+\end{equation}
+\begin{equation}
+	\gamma_{22} = \frac{\gamma_{12}}{2T} = \frac{p\bar{v}\sigma}{4T}.
+\end{equation}
+
+
+
+
+
+% \nocite{*}
+
+% \input{bib.tex}
+
+\end{document}
+

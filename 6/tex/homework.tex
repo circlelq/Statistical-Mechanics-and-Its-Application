@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\input{/Users/circle/Documents/博一下/homework/setting.tex}
+\setcounter{secnumdepth}{2}
+\usepackage{autobreak}
+\usepackage{amsmath}
+\setlength{\parindent}{2em}
+\graphicspath{{../}}
+\ziju{0.1pt}
+
+%pdf文件设置
+\hypersetup{
+	pdfauthor={袁磊祺},
+	pdftitle={统计力学及应用作业6}
+}
+
+\title{
+		\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{\LARGE Peking University}\\[0.2cm] % Name of your university/college \\ [25pt]
+		\horrule{0.5pt} \\[0.2cm]
+		\huge \bfseries{统计力学及应用作业6} \\[-0.2cm]
+		\horrule{2pt} \\[0.2cm]
+}
+\author{
+		\normalfont 								\normalsize
+		College of Engineering \quad 2001111690  \quad 袁磊祺\\	\normalsize
+        \today
+}
+\date{}
+
+\begin{document}
+
+\input{/Users/circle/Documents/博一下/homework/setc.tex}
+
+\maketitle
+
+\section{1}
+
+
+以$P$和$S$为自变量，证明$\left\langle \Delta S\Delta P\right\rangle =0,\ \left\langle \left(\Delta S\right) ^2\right\rangle = C_P,\ \left\langle \left(\Delta P\right) ^2\right\rangle = -T \left(\frac{\partial P}{\partial V} \right)_S$.
+
+根据书上P300有
+\begin{equation}
+	w \propto \exp \left[\frac{1}{2T}\left(\frac{\partial V}{\partial P}\right)_S\left(\Delta P\right)^2 - \frac{1}{2C_p} \left( \Delta S \right) ^2\right],
+\end{equation}
+这个式子分解成两个因子，各自只与$\Delta P$或$\Delta S$有关。换句话说，压强和熵是的涨落是统计独立的，因而
+\begin{align}
+	\left\langle \Delta S\Delta P\right\rangle =         & \ 0,                                                                                                                                    \\
+	\left\langle \left(\Delta S\right) ^2\right\rangle = & \ -\frac{1}{2} \frac{1}{-\frac{1}{2C_p}} =  C_P,                                                                                        \\
+	\left\langle \left(\Delta P\right) ^2\right\rangle = & \ -\frac{1}{2} \frac{1}{\frac{1}{2T \left(\frac{\partial P}{\partial V} \right)_S}} = -T \left(\frac{\partial P}{\partial V} \right)_S.
+\end{align}
+
+
+
+
+
+
+
+
+
+% \nocite{*}
+
+% \input{bib.tex}
+
+\end{document}
+
